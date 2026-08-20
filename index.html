@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Lovely Memories ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- الصفحة الرئيسية -->
+    <section class="page active" id="home">
+
+        <div class="card">
+            <div class="flowers">🌸 🌷 🌸</div>
+
+            <h1>
+        🦌😉 هاي يغزاله  </h1>
+
+            <p>
+            أهلاً بكي في عالمنا الصغير المليء بالذكريات الجميلة واللحظات المميزة والحب.. ❤️
+            </p>
+
+            <button onclick="nextPage()">
+                Start Our Story ❤️
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- صفحة العداد -->
+    <section class="page" id="counterPage">
+
+        <div class="counter-card">
+
+            <div class="big-heart">❤️</div>
+
+            <h1>بدايتنا</h1>
+
+            <p class="date-text">
+                مع بعض من يوم
+                <strong>5  يوليو2024</strong>
+            </p>
+
+            <div class="counter">
+
+                <div class="time-box">
+                    <span id="years">0</span>
+                    <small>سنة</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="months">0</span>
+                    <small>شهر</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <small>يوم</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <small>ساعة</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <small>دقيقة</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <small>ثانية</small>
+                </div>
+
+            </div>
+
+            <p class="love-text">
+                وكل ثانية بتعدي بتضيف ذكرى جديدة ❤️
+            </p>
+
+            <button onclick="nextPage()">
+                Our Memories 🌸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- الذكرى الأولى -->
+    <section class="page" id="memory1">
+
+        <div class="memory-card">
+
+            <div class="memory-number">
+                Memory 01
+            </div>
+
+            <img src="111.jpeg">
+
+            <div class="book">
+
+                <div class="book-flower">🌷</div>
+
+                <h2>Our First Memory</h2>
+
+                <p>
+                    حسيت ان وجودي مهم بلنسبه ليكي. ❤️
+                </p>
+
+            </div>
+
+            <div class="buttons">
+                <button onclick="previousPage()">← Previous</button>
+                <button onclick="nextPage()">Next →</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الذكرى الثانية -->
+    <section class="page" id="memory2">
+
+        <div class="memory-card">
+
+            <div class="memory-number">
+                Memory 02
+            </div>
+
+            <img src="222.jpeg" alt="Memory 2">
+
+            <div class="book">
+
+                <div class="book-flower">🌸</div>
+
+                <h2>Another Beautiful Day</h2>
+
+                عيون الغزال هيا حياتي. 💗
+                </p>
+
+            </div>
+
+            <div class="buttons">
+                <button onclick="previousPage()">← Previous</button>
+                <button onclick="nextPage()">Next →</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الذكرى الثالثة -->
+    <section class="page" id="memory3">
+
+        <div class="memory-card">
+
+            <div class="memory-number">
+                Memory 03
+            </div>
+
+            <img src="333.jpeg" alt="Memory 3">
+
+            <div class="book">
+
+                <div class="book-flower">💐</div>
+
+                <h2>A Special Memory</h2>
+
+                <p>
+                قلقك عليا بيخليني طاير من الفرحه. ❤️
+                </p>
+
+            </div>
+
+            <div class="buttons">
+                <button onclick="previousPage()">← Previous</button>
+                <button onclick="nextPage()">Next →</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الأسئلة -->
+    <section class="page" id="questions">
+
+        <div class="quiz-card">
+
+            <div class="quiz-flower">🌷</div>
+
+            <p class="question-number" id="questionNumber">
+                Question 1
+            </p>
+
+            <h2 id="question">
+                What's your favorite memory? ❤️
+            </h2>
+
+            <div class="answers" id="answers"></div>
+
+            <p id="result"></p>
+
+            <button class="next-question" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- النهاية -->
+    <section class="page" id="end">
+
+        <div class="card">
+
+            <div class="flowers">
+                
+            </div>
+
+            <h1>Thank You ❤️</h1>
+
+            <p>
+                شكراً لكونك جزءاً من هذه الذكريات الجميلة يا اميرتي👸❣️.
+            </p>
+
+            <div class="heart-animation">
+                ❤️
+            </div>
+
+            <p>
+                أتمنى أن نحظى بالمزيد من الذكريات الجميلة ❣️.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
